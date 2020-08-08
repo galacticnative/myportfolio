@@ -1,0 +1,114 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 48px;
+    margin: 8px 0;
+}
+
+header nav {
+    font-size: 28px;
+    margin: 8px 0;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 20px;
+}
+
+.about-me {
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-me h2 {
+    flex: 1 200px;
+}
+
+.about-me p {
+    flex: 1 200px;
+}
+
+.contact-me {
+    padding: 20px 35px;
+    background-color: pink;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-me div a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.contact-me h2 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 8px 16px;
+}
+
+.contact-me div {
+    font-size: 24px;
+    margin: 8px 24px;
+    padding: 10px 20px;
+}
+
+.work {
+    background: black;
+    color: white;
+}
+
+.work-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.work-grid-container {
+    background: black;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    color: pink;
+    font-size: 20px;
+    grid-gap: 10px;
+}
+
+.work-grid-item {
+    padding: 15px 0;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
