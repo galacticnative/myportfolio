@@ -10,6 +10,7 @@ header {
     padding: 20px 35px;
     background-color: pink;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -39,20 +40,41 @@ header nav ul {
 
 header nav ul li a {
     padding: 10px 20px;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url("./images/hero-antelope.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: 200px;
+    width: 100%;
 }
 
 .about-me {
     color: white;
     display: flex;
     flex-direction: row;
+    margin: 10px;
 }
 
 .about-me h2 {
-    flex: 1 200px;
+    font-size: 36px;
+    align-self: flex-start;
+    margin: 30px;
+    padding-left: 50px;
 }
 
 .about-me p {
     flex: 1 200px;
+    align-self: flex-start;
+    margin: 30px 0;
+    border-left: 2px solid white; 
+    padding-left: 50px;
 }
 
 .contact-me {
@@ -84,31 +106,76 @@ header nav ul li a {
 .work {
     background: black;
     color: white;
+    display: flex;
+}
+
+.work h2 {
+    font-size: 36px;
+    padding: 0 150px 0 50px;
 }
 
 .work-grid-wrapper {
+    width: 50%;
+    margin: 30px 0;
+    flex-wrap: wrap;
     display: flex;
-    width: 100%;
-    justify-content: flex-end;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-left: 2px solid white; 
+    place-content: center;
 }
 
 .work-grid-container {
     background: black;
-    width: 50%;
+    width: 90vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     border: 1px solid black;
     color: pink;
     font-size: 20px;
-    grid-gap: 10px;
+    grid-gap: 15px;
 }
 
 .work-grid-item {
-    padding: 15px 0;
     border: 1px solid white;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
+    width: 100%;
+}
+
+.work-grid-item img {
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.runbuddy-img {
+    background-image: url("../css/images/runbuddy-mockup-v2.jpg");
+    background-size: cover;
+}
+
+.runbuddy-img h3 {
+    position: relative;
+    z-index: 1000;
+    font-size: 28px;
+}
+
+.runbuddy-img h4 {
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+}
+
+.project-description {
+    position: absolute;
+}
+
+.project-h3 {
+    padding-top: 20px;
+}
+
+.project-h4 {
+    padding-top: 40px;
 }
