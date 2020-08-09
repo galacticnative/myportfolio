@@ -8,7 +8,7 @@ body {
 
 header {
     padding: 20px 35px;
-    background-color: pink;
+    background-color: #dca1f5;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -166,6 +166,29 @@ header nav ul li a:hover {
 .box1 {
     grid-column: 1 / 3;
     grid-row: 1/ 3;
+}
+
+.box1:hover {
+    opacity: 0.8;
+}
+
+.box2:hover {
+    opacity: 0.8;
+}
+
+.box3:hover {
+    opacity: 0.5;
+    background: violet;
+}
+
+.box4:hover {
+    opacity: 0.5;
+    background: violet;
+}
+
+.box5:hover {
+    opacity: 0.5;
+    background: violet;
 }
 
 .work-grid-item img {
