@@ -34,6 +34,7 @@ header nav ul {
     list-style: none;
 }
 
+/* took away default hyperlink style */
 header nav ul li a {
     padding: 10px 20px;
     text-decoration: none;
@@ -78,7 +79,7 @@ header nav ul li a:hover {
     flex: 1 200px;
     align-self: flex-start;
     margin: 30px 0;
-    border-left: 2px solid white; 
+    border-left: 2px solid white;
     padding-left: 100px;
     line-height: 1.3;
     color: lavenderblush;
@@ -137,10 +138,11 @@ header nav ul li a:hover {
     display: flex;
     padding-left: 100px;
     padding-right: 100px;
-    border-left: 2px solid white; 
+    border-left: 2px solid white;
     place-content: center;
 }
 
+/* created grid boxes */
 .work-grid-container {
     background: black;
     width: 90vw;
@@ -151,11 +153,12 @@ header nav ul li a:hover {
     color: pink;
     font-size: 20px;
     grid-gap: 15px;
+    text-decoration: none;
 }
 
 .work-grid-item {
     border: 1px solid white;
-    display: block;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -166,6 +169,11 @@ header nav ul li a:hover {
 .box1 {
     grid-column: 1 / 3;
     grid-row: 1/ 3;
+}
+
+.box2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
 }
 
 .box1:hover {
@@ -206,14 +214,43 @@ header nav ul li a:hover {
     background-size: cover;
 }
 
+/* header box is clickable link to Run Buddy project, ongoing */
+/* to-do: would like to position header box at bottom left */
+.work-grid-item #box1-header {
+    border: black;
+    top: 125px;
+    line-height: 0;
+    padding: 0 20px;
+    background: black;
+    border-radius: 15px;
+    opacity: 0.75;
+    color: violet;
+}
+
+/* header box is clickable link to basic html project */
+.work-grid-item #box2-header {
+    border: black;
+    top: 125px;
+    line-height: 0;
+    padding: 0 10px;
+    background: black;
+    border-radius: 15px;
+    opacity: 0.75;
+    color: violet;
+}
+
 .runbuddy-img h3 {
-    position: relative;
-    z-index: 1000;
     font-size: 28px;
 }
 
 .runbuddy-img h4 {
-    position: relative;
-    z-index: 1;
-    font-size: 22px;
+    font-size: 20px;
+}
+
+.fanpage-img h3 {
+    font-size: 28px;
+}
+
+.fanpage-img h4 {
+    font-size: 20px;
 }
