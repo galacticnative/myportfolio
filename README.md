@@ -12,5 +12,5 @@ https://galacticnative.github.io/myportfolio/
 ## Content Creator/Feature Developer:
 Brandi Curley
 
-![picture](assets/css/images/portfolio.png)
+![picture](./assets/images/portfolio.png)
 
